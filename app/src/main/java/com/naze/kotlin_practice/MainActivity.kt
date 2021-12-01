@@ -1,4 +1,4 @@
-package com.naze.kotlin_practice
+`package com.naze.kotlin_practice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -68,6 +68,45 @@ class MainActivity : AppCompatActivity() {
             }
         } //파라미터 없는 when
 
+        var stringList = mutableListOf<String>() //문자열로 된 빈 컬랙션
+
+        //입력
+        stringList.add("월")
+        stringList.add("월")
+
+        //사용
+        Log.d("Collection","stringList에 입력된 두번째 값은 ${stringList.get(1)}입니다.")
+
+        //수정
+        stringList.set(1,"수정된 값")
+
+        //삭제
+        stringList.removeAt(1)
+
+        //set 중복 X 인 리스트
+        //get 없음
+
+        //map<키 값, 값>
+
+        //반복문
+
+        for (index in 1..10) {
+            Log.d("For","현재 숫자는 ${index}")
+        }//기본 in ..
+
+        val array = arrayOf("JAN","FEB","MAR","APR","MAY","JUN")
+        for (index in 0 until array.size) {
+            Log.d("For2","현재 월은 ${array.get(index)}")
+        }//until 마지막 숫자는 제외
+
+
+
+        //step 건너뛰기
+
+        //downto 감소 (for i--) 느낌
+
+
     }
+
 
 }
