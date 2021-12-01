@@ -1,4 +1,4 @@
-`package com.naze.kotlin_practice
+package com.naze.kotlin_practice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
